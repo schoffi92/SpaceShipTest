@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        block head
+            each link in head.styles
+                link(href=link, rel="stylesheet", type="text/css")
+
+            if devMode
+                each js in head.jsDevLib
+                    script(type="text/javascript", src=js + ".js")
+            else
+                each js in head.jsLib
+                    script(type="text/javascript", src=js + ".js")
+
+
+    body(class="cloak")
+        block content
+
+        if devMode
+            each js in head.jsDev
+                script(type="text/javascript", src=js + ".js")
+        else
+            each js in head.js
+                script(type="text/javascript", src=js + ".js")

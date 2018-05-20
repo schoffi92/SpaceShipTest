@@ -1,0 +1,28 @@
+{
+    "rules": {
+        "typedef": [
+            true,
+            "call-signature",
+            "arrow-call-signature",
+            "arrow-parameter",
+            "parameter",
+            "variable-declaration",
+            "property-declaration",
+            "member-variable-declaration"
+        ],
+        "max-classes-per-file": [true, 1],
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+        "only-arrow-functions": true,
+        "quotemark": true,
+        "interface-name": true,
+        "class-name": true,
+        "no-unnecessary-initializer": true,
+        "no-duplicate-imports": true,
+        "no-consecutive-blank-lines": [true, 2],
+        "no-empty-interface": true,
+        "no-any": true,
+        "no-eval": true,
+        "no-console": true,
+        "no-var-requires": true
+    }
+}

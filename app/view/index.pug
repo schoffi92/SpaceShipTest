@@ -1,0 +1,14 @@
+extends _layout.pug
+
+block append head
+    title= head.title + " Index"
+    script(type="text/javascript", src="/js/pixi.min.js")
+
+block append content
+    div(id="canvasContainer", class="container")
+    p= "<h1>Irányítás: Nyilak + Space</h1>"
+
+    if !devMode
+        script(type="text/javascript", src="/js/all.min.js")
+
+    include _error.pug

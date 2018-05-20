@@ -1,0 +1,29 @@
+@import "_mixin";
+//@import "_fonts";
+
+html, body {
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    margin: auto;
+    /* padding: 0 20px; */
+    font-size: 2.5rem;
+    color: #aaa;
+    text-align: center;
+}
+
+.cloak, .hidden {
+    display: none;
+}
+
+canvas {
+    @include center;
+}

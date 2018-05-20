@@ -1,0 +1,18 @@
+{
+    "head": {
+        "title": "Game",
+        "styles": [
+            "css/style.css"
+        ],
+        "jsLib": [
+            "/js/cloak"
+        ],
+        "js": [],
+        "jsDevLib": [
+            "node_modules/typescript/lib/typescript"
+        ],
+        "jsDev": [
+
+        ]
+    }
+}
