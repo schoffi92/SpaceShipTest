@@ -91,9 +91,9 @@ class PlayerShip extends PIXI.Container implements IView {
         // Remove Rockets
         if (this.rockets.length > 0)
         {
-            for (let i: number=this.rockets.length;i>=0;i--)
+            for (let i: number=this.rockets.length-1;i>=0;i--)
             {
-                if (this.rockets[i].x + this.rockets[i].width > this.game.width)
+                if (this.rockets[i].x > this.game.width)
                 {
                     this.rockets[i].deactivate();
                     this.rockets.splice(i, 1);
